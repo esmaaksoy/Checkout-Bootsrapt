@@ -1,29 +1,31 @@
-.img-book{
-    width: 100px;
-}
-.icons{
-    gap: 1rem;
-}
-.cards{
-gap: 1rem;
+.img-book {
+  width: 100px;
 }
 
-header{
-    position: relative;
+.icons {
+  gap: 1rem;
 }
+
+.cards {
+  gap: 1rem;
+}
+
+header {
+  position: relative;
+}
+
 .cart-badge {
-    width: 30px;
-    height: 30px;
-    background-color: brown;
-    border-radius: 50%;
-
-    color:white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: -1rem;
-    right: 2rem;
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -1rem;
+  right: 2rem;
 }
+
+/*# sourceMappingURL=style.css.map */
