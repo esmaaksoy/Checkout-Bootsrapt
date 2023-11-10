@@ -1,0 +1,43 @@
+.img-book {
+    width: 100px;
+  }
+  
+  .cards {
+    gap: 1rem;
+    .icons {
+        gap: 1rem;
+      }
+  }
+  
+  header {
+    position: relative;
+    
+    div{
+        p{
+            font-family: 'Italianno', cursive;
+            font-size: 3rem;
+            margin-left: 4rem;
+         
+        }
+        .cart-badge {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            border: 1px solid black;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -1rem;
+            right: 2rem;
+          }
+    }
+    
+ 
+  }
+  
+ 
+  
+  

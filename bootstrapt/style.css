@@ -2,24 +2,28 @@
   width: 100px;
 }
 
-.icons {
+.cards {
   gap: 1rem;
 }
-
-.cards {
+.cards .icons {
   gap: 1rem;
 }
 
 header {
   position: relative;
 }
-
-.cart-badge {
+header div p {
+  font-family: "Italianno", cursive;
+  font-size: 3rem;
+  margin-left: 4rem;
+}
+header div .cart-badge {
   width: 30px;
   height: 30px;
-  background-color: brown;
+  background-color: white;
   border-radius: 50%;
-  color: white;
+  border: 1px solid black;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,33 +32,4 @@ header {
   right: 2rem;
 }
 
-
-/* .img-book {
-  width: 100px;
-}
-
-.icons {
-  gap: 1rem;
-}
-
-.cards {
-  gap: 1rem;
-}
-
-header {
-  position: relative;
-}
-
-.cart-badge {
-  width: 30px;
-  height: 30px;
-  background-color: brown;
-  border-radius: 50%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: -1rem;
-  right: 2rem;
-} */
+/*# sourceMappingURL=style.css.map */
