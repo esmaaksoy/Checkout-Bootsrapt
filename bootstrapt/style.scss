@@ -38,6 +38,17 @@
  
   }
   
- 
+ @mixin title(){
+text-align: center;
+font-family: 'Italianno', cursive;
+font-size: 3rem;
+font-weight: 600;
+color: black;
+letter-spacing: 3rem;
+margin-bottom: 1rem;
+ }
   
   
+h2{
+    @include title()
+}
