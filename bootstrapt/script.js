@@ -12,6 +12,7 @@ document.querySelector("main").addEventListener("click",(event)=>{
     event.preventDefault()
     if(event.target.classList.contains("fa-cart-shopping")){
         document.querySelector(".cart-badge").textContent = Number( document.querySelector(".cart-badge").textContent) +1
+        console.log(document.querySelector("img"));
    
     }
 
