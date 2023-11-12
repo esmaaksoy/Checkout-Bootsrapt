@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .img-book {
     width: 100px;
   }
@@ -24,4 +30,7 @@ p{
 .product{
     display: flex;
     justify-content: space-between;
+}
+.product i{
+  cursor: pointer;
 }
