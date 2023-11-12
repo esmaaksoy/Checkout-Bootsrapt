@@ -1,13 +1,11 @@
 const countShoppingNumber = document.querySelector("#header-shopping")
 const cartShopping = document.querySelectorAll(".icons")
-console.log(cartShopping);
-
 const cart = document.querySelector(".header__div--a");
+//new page
 cart.addEventListener("click", ()=>{
     window.open("../check/check.html")
 })
-
-
+//............................
 document.querySelector("main").addEventListener("click",(event)=>{
     event.preventDefault()
     if(event.target.classList.contains("fa-cart-shopping")){
@@ -18,7 +16,6 @@ document.querySelector("main").addEventListener("click",(event)=>{
         const bookName = event.target.closest(".card").querySelector(".card-title").textContent
         const price = event.target.closest(".card").querySelector(".card-text span").textContent;
         console.log(price);
-
         //localStorage
         localStorage.setItem("selectedImageSrc", imageSrc); //"Saves the src of the image to the local storage."
         localStorage.setItem("selectedPrice",price)
