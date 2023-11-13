@@ -1,4 +1,5 @@
 
+
 const imageSrc = localStorage.getItem("selectedImageSrc");
 document.querySelector(".image").src = imageSrc
 
@@ -12,6 +13,11 @@ document.querySelector(".noProduct").style.display="none"
 document.querySelector(".products").addEventListener("click", (event)=>{
 if(event.target.classList.contains("fa-plus")){
     document.querySelector(".number").textContent++
+
+   document.querySelector(".productPrice").textContent= Number(document.querySelector(".number").textContent) * Number(document.querySelector(".productPrice").textContent)
+
+
+
 }else if(event.target.classList.contains("fa-minus")){
     if(document.querySelector(".number").textContent>1){
         document.querySelector(".number").textContent--
@@ -20,10 +26,10 @@ if(event.target.classList.contains("fa-plus")){
 
     document.querySelector(".products").style.display="none"
     document.querySelector(".noProduct").style.display="block"
-    // document.querySelector(".noProduct").style.textAlign="center"
-   
- 
-
 }
+})
 
+console.log(document.querySelector(".continue"));
+document.querySelector(".continue").addEventListener("click", ()=>{
+    window.open("../bootstrapt/index.html")
 })
