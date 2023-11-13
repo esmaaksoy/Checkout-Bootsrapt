@@ -13,6 +13,8 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 3rem;
+text-align: center;
+
   }
 .shopping{
     background-color: black;
@@ -23,6 +25,7 @@ padding: 3rem;
     justify-content: center;
     align-items: center;
     color: white;
+    margin: auto;
 }
 p{
     font-size: 2rem;
@@ -30,6 +33,7 @@ p{
 .product{
     display: flex;
     justify-content: space-between;
+   
 }
 .product i{
   cursor: pointer;
