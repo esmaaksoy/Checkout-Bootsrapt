@@ -1,5 +1,3 @@
-
-
 const imageSrc = localStorage.getItem("selectedImageSrc");
 document.querySelector(".image").src = imageSrc
 
@@ -13,15 +11,19 @@ document.querySelector(".noProduct").style.display="none"
 document.querySelector(".products").addEventListener("click", (event)=>{
 if(event.target.classList.contains("fa-plus")){
     document.querySelector(".number").textContent++
+const quantity = Number(document.querySelector(".number").textContent);
+document.querySelector(".productPrice").textContent = (quantity * priceValue).toFixed(2); 
 
-   document.querySelector(".productPrice").textContent= Number(document.querySelector(".number").textContent) * Number(document.querySelector(".productPrice").textContent)
-
-
-
+// document.querySelector(".cart").textContent= document.querySelector(".productPrice").textContent
+// document.querySelector(".ship").textContent= document.querySelector(".cart").textContent > 300 ? "00.00" : "50.00"
+totalCalc()
 }else if(event.target.classList.contains("fa-minus")){
     if(document.querySelector(".number").textContent>1){
         document.querySelector(".number").textContent--
-    }
+        const quantity = Number(document.querySelector(".number").textContent);
+document.querySelector(".productPrice").textContent = (quantity * priceValue).toFixed(2); 
+    }document.querySelector(".cart").textContent= document.querySelector(".productPrice").textContent;
+    totalCalc()
 }else if(event.target.classList.contains("fa-trash-can")){
 
     document.querySelector(".products").style.display="none"
@@ -33,3 +35,12 @@ console.log(document.querySelector(".continue"));
 document.querySelector(".continue").addEventListener("click", ()=>{
     window.open("../bootstrapt/index.html")
 })
+
+document.querySelector(".cart").textContent= priceValue
+
+
+const totalCalc= ()=>{
+    document.querySelector(".cart").textContent= document.querySelector(".productPrice").textContent
+document.querySelector(".ship").textContent= document.querySelector(".cart").textContent > 300 ? "00.00" : "50.00"
+document.querySelector(".to")
+}
