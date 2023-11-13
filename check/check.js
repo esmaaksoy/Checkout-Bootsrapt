@@ -25,9 +25,11 @@ document.querySelector(".productPrice").textContent = (quantity * priceValue).to
     }document.querySelector(".cart").textContent= document.querySelector(".productPrice").textContent;
     totalCalc()
 }else if(event.target.classList.contains("fa-trash-can")){
-
     document.querySelector(".products").style.display="none"
     document.querySelector(".noProduct").style.display="block"
+    document.querySelector(".cart").textContent = "0.00"
+    document.querySelector(".ship").textContent = "0.00"
+    document.querySelector(".totalPrice").textContent= "0.00"
 }
 })
 
@@ -37,10 +39,11 @@ document.querySelector(".continue").addEventListener("click", ()=>{
 })
 
 document.querySelector(".cart").textContent= priceValue
-
+document.querySelector(".ship").textContent= document.querySelector(".cart").textContent > 300 ? "00.00" : "50.00"
+document.querySelector(".totalPrice").textContent = (Number(document.querySelector(".cart").textContent) + Number(document.querySelector(".ship").textContent)).toFixed(2)
 
 const totalCalc= ()=>{
-    document.querySelector(".cart").textContent= document.querySelector(".productPrice").textContent
+document.querySelector(".cart").textContent= document.querySelector(".productPrice").textContent
 document.querySelector(".ship").textContent= document.querySelector(".cart").textContent > 300 ? "00.00" : "50.00"
-document.querySelector(".to")
+document.querySelector(".totalPrice").textContent = (Number(document.querySelector(".cart").textContent) + Number(document.querySelector(".ship").textContent)).toFixed(2)
 }
