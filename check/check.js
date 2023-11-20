@@ -67,8 +67,8 @@ document.querySelector(".continue").addEventListener("click", ()=>{
 })
 
 
-// document.querySelector(".ship").textContent= document.querySelector(".cart").textContent > 300 ? "00.00" : "50.00"
-// document.querySelector(".totalPrice").textContent = (Number(document.querySelector(".cart").textContent) + Number(document.querySelector(".ship").textContent)).toFixed(2)
+document.querySelector(".ship").textContent= document.querySelector(".cart").textContent > 300 ? "00.00" : "50.00"
+document.querySelector(".totalPrice").textContent = (Number(document.querySelector(".cart").textContent) + Number(document.querySelector(".ship").textContent)).toFixed(2)
 
 const totalCalc= ()=>{
 document.querySelector(".cart").textContent= document.querySelector(".productPrice").textContent

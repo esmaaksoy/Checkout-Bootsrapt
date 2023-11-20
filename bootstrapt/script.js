@@ -57,7 +57,6 @@ document.querySelector("main").addEventListener("click",(event)=>{
             imageSrc: imageProduct.getAttribute("src"),
             productName: event.target.closest(".card").querySelector(".card-title").textContent,
             productPrice: event.target.closest(".card").querySelector(".card-text span").textContent,
-            // productNumber: event.target.closest(".card").querySelector(".card-text span").textContent,
           };
           
           const existingProductsJSON = localStorage.getItem('shoppingCart');
