@@ -38,3 +38,7 @@ p{
 .product i{
   cursor: pointer;
 }
+footer {
+  font-family: "Italianno", cursive;
+  font-size: 3rem;
+}
