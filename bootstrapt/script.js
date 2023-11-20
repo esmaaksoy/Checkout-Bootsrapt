@@ -26,6 +26,15 @@
 // })
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const existingProductsJSON = localStorage.getItem('shoppingCart');
+    const existingProducts = existingProductsJSON ? JSON.parse(existingProductsJSON) : [];
+  
+    if (existingProducts.length > 0) {
+      localStorage.removeItem('shoppingCart');
+      
+    }
+})  
 // //!JSON DENEMELERİM.................
 const countShoppingNumber = document.querySelector("#header-shopping")
 const cartShopping = document.querySelectorAll(".icons")
@@ -55,16 +64,11 @@ document.querySelector("main").addEventListener("click",(event)=>{
           existingProducts.push(productInfo);
           localStorage.setItem('shoppingCart', JSON.stringify(existingProducts));
       
-          cartBadge.textContent = existingProducts.length;
+      
     }
 
 })
 
-
-
-
-     
-  
 
   
      
