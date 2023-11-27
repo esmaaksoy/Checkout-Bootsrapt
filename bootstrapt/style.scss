@@ -56,3 +56,10 @@ footer{
   font-family: 'Italianno', cursive;
   font-size: 3rem;
 }
+.card-title{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+}
