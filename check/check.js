@@ -1,6 +1,8 @@
 const existingProductsJSON = localStorage.getItem('shoppingCart');
 const existingProducts = existingProductsJSON ? JSON.parse(existingProductsJSON) : [];
 const productsContainer = document.querySelector(".products");
+const FREE_SHIPPING_LIMIT = 300
+const SHIPPING_PRICE = 100.99
 document.querySelector(".noProduct").style.display = "none";
 
 existingProducts.forEach((product,index) => {
@@ -18,8 +20,11 @@ existingProducts.forEach((product,index) => {
         <i class="fa-solid fa-minus fa-2x"></i>
       </div>
     </div>
-    <div class="d-flex align-items-center justify-content-center"style="width: 200px" >
+    <div class="d-flex align-items-center justify-content-center text-secondary"style="width: 200px" >
       <p class="productPrice me-5" >${product.productPrice}</p>
+    </div>
+    <div class="d-flex align-items-center justify-content-center"style="width: 200px" >
+      <p class="discountedPrice me-5">${product.productPrice}</p>
       <i class="fa-solid fa-trash-can fa-2x"></i>
     </div>
   `;
@@ -43,38 +48,49 @@ calculateTotalPrice(event.target)
   }
 }else if(event.target.classList.contains("fa-trash-can")){
   event.target.closest(".product").remove()
-    // document.querySelector(".noProduct").style.display="block"
-    document.querySelector(".cart").textContent = "0.00"
-    document.querySelector(".ship").textContent = "0.00"
-    document.querySelector(".totalPrice").textContent= "0.00"
-  
+   
+    // document.querySelector(".cart").textContent = "0.00"
+    // document.querySelector(".ship").textContent = "0.00"
+    // document.querySelector(".totalPrice").textContent= "0.00"
+  calculateTotal()
 }
 })
 const calculateTotalPrice= (btn) => {
-  const discountedPrice = btn
-    .closest(".product-info")
-    .querySelector("#discounted-price").textContent
-
-  const quantity = btn
-    .closest(".buttons-div")
-    .querySelector("#quantity").textContent
-
   const productPrice = btn
-    .closest(".buttons-div")
-    .querySelector("#product-price")
-
-  productPrice.textContent = (discountedPrice * quantity).toFixed(2)
-  calculateTotalPrice()
+    .closest(".product")
+    .querySelector(".productPrice").textContent
+  const quantity = btn
+  .closest(".product")
+    .querySelector(".number").textContent
+    
+const discountedPrice=btn
+.closest(".product")
+.querySelector(".discountedPrice")
+discountedPrice.textContent = (productPrice * quantity).toFixed(2)
+ calculateTotal()
 }
 
+const calculateTotal = () => {
+  const prices = document.querySelectorAll(".discountedPrice")
+  const subtotal = [...prices].reduce(
+    (sum, price) => sum + Number(price.textContent),
+    0
+  )
+  const shippingPrice = subtotal >= FREE_SHIPPING_LIMIT || subtotal === 0 ? 0 : SHIPPING_PRICE
+  const totalPrice = subtotal + shippingPrice 
+  document.querySelector(".ship").textContent = shippingPrice.toFixed(2)
+  document.querySelector(".totalPrice").textContent = totalPrice.toFixed(2)
+  document.querySelector(".cart").textContent = subtotal.toFixed(2)
+  !totalPrice && noProductPrint()
+}
 
+const noProductPrint = () => {
+  document.querySelector(".noProduct").style.display="block"
+}
 
-
-
-// document.querySelector(".ship").textContent= document.querySelector(".cart").textContent > 300 ? "00.00" : "50.00"
-// document.querySelector(".totalPrice").textContent = (Number(document.querySelector(".cart").textContent) + Number(document.querySelector(".ship").textContent)).toFixed(2)
-
-
+window.addEventListener("load", () => {
+  calculateTotal()
+})
 
 
 
