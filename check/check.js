@@ -31,7 +31,7 @@ existingProducts.forEach((product,index) => {
   productsContainer.appendChild(productDiv);
 });
 document.querySelector(".continue").addEventListener("click", ()=>{
-  window.open("../bootstrapt/index.html")
+  window.open("../index.html")
 })
 
 
