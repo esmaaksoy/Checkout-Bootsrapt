@@ -5,7 +5,7 @@
 
 ## Screenshots
 
-![Project snapshot]()
+![Project snapshot](https://github.com/esmaaksoy/Checkout-Bootsrapt/blob/main/book%20shop.gif)
 
 [Book Shop Live Page](https://explore-book.netlify.app/)
 
