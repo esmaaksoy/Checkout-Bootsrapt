@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const existingProductsJSON = localStorage.getItem('shoppingCart');
     const existingProducts = existingProductsJSON ? JSON.parse(existingProductsJSON) : [];
-  
     if (existingProducts.length > 0) {
       localStorage.removeItem('shoppingCart');
-      
     }
 })  
 const countShoppingNumber = document.querySelector("#header-shopping")

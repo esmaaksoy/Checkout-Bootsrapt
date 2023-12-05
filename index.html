@@ -1,285 +1,535 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./bootstrapt/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 NAVBAR                                  -->
     <!-- ----------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./img/book-2343533_1280.webp" alt="logo" class="img-book"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#kitap">Kitap</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#dergi">Dergi</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#yeniCikanlar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Yeni Çıkanlar
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Dünya Klasikleri</a></li>
-                  <li><a class="dropdown-item" href="#">Türk Edebiyatı</a></li>
-                  <li><a class="dropdown-item" href="#">Kişisel Gelişim</a></li>
-                  <li><a class="dropdown-item" href="#">Tarih</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Ne okusam?</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search ">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./img/book-2343533_1280.webp" alt="logo" class="img-book"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#kitap"
+                >Kitap</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dergi">Dergi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#yeniCikanlar"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Yeni Çıkanlar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dünya Klasikleri</a></li>
+                <li><a class="dropdown-item" href="#">Türk Edebiyatı</a></li>
+                <li><a class="dropdown-item" href="#">Kişisel Gelişim</a></li>
+                <li><a class="dropdown-item" href="#">Tarih</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Ne okusam?</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search ">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 HEADER                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header class="bg-body-tertiary mb-5">
+      <div class="d-flex justify-content-between px-5">
+        <p>Explore worlds between the pages.</p>
+        <a href="" class="header__div--a"
+          ><i class="fa-solid fa-cart-shopping fa-3x text-dark"></i>
+          <span class="cart-badge" id="header-shopping">0</span></a
+        >
+      </div>
+    </header>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  KİTAP                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <main>
+      <div class="container bg-body-secondary p-5 mb-5" id="kitap">
+        <h2>KİTAP</h2>
+        <div class="d-flex cards">
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (7).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hapishanenin Doğuşu</h5>
+              <p class="card-text text-danger"><span>100.99</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (8).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kelimeler ve Şeyler</h5>
+              <p class="card-text text-danger"><span>50</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/kendini-bilmek7bb0cb5f018baa2ee116f05ca5e09884.jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kendini Bilmek</h5>
+              <p class="card-text text-danger"><span>80</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/images (5).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Deliliğin Tarihi</h5>
+              <p class="card-text text-danger"><span>200</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (11).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">21. Yüzyılın Ezber Bozan Düşünürü</h5>
+              <p class="card-text text-danger"><span>150</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
       <!-- ----------------------------------------------------------------------- -->
-      <!--                                 HEADER                                 -->
+      <!--                                  DERGİ                                  -->
       <!-- ----------------------------------------------------------------------- -->
-      <header class="bg-body-tertiary mb-5">
-        <div class="d-flex justify-content-between px-5" >
-          <p>Explore worlds between the pages.</p>
-            <a href="" class="header__div--a"><i class="fa-solid fa-cart-shopping fa-3x text-dark"></i> 
-            <span class="cart-badge" id="header-shopping">0</span></a>
-        </div>
-      </header>
-<!-- ----------------------------------------------------------------------- -->
-<!--                                  KİTAP                                  -->
-<!-- ----------------------------------------------------------------------- -->
-<main>
-<div class="container bg-body-secondary p-5 mb-5" id="kitap">
-    <h2>KİTAP</h2>
-    <div class="d-flex cards">
-    <div class=" card" style="width: 15rem;">
-        <img src="./img/download (7).jpg" class="card-img-top" alt="..." height="330px">
-        <div class="card-body">
-          <h5 class="card-title">Hapishanenin Doğuşu</h5>
-          <p class="card-text text-danger"><span>100.99</span></p>
-          <div class="d-flex icons">
-            <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-            <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-            <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-          </div>         
-        </div>
-      </div>
-    <div class=" card" style="width: 15rem;">
-        <img src="./img/download (8).jpg" class="card-img-top" alt="..."height="330px">
-        <div class="card-body">
-          <h5 class="card-title">Kelimeler ve Şeyler</h5>
-          <p class="card-text text-danger"><span>50</span></p>
-          <div class="d-flex icons">
-            <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-            <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-            <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-          </div>         
-        </div>
-      </div>
-    <div class=" card" style="width: 15rem;">
-        <img src="./img/kendini-bilmek7bb0cb5f018baa2ee116f05ca5e09884.jpg" class="card-img-top" alt="..." height="330px">
-        <div class="card-body">
-          <h5 class="card-title">Kendini Bilmek</h5>
-          <p class="card-text text-danger"><span>80</span></p>
-          <div class="d-flex icons">
-            <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-            <a href=""><i class="fa-solid fa-heart text-danger fa-2x" ></i></a>
-            <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
+      <div class="container bg-body-secondary p-5 mb-5" id="dergi">
+        <h2>DERGİ</h2>
+        <div class="d-flex cards">
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (13).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bilim ve Teknik</h5>
+              <p class="card-text text-danger"><span>90</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/images (6).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">OT</h5>
+              <p class="card-text text-danger"><span>75</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (12).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HECE</h5>
+              <p class="card-text text-danger"><span>85</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/roman-kahramanlari-sayi-46-nisan-haziran-202179beb6c67e686877a6b47f35a84b880b.jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Roman Kahramanları</h5>
+              <p class="card-text text-danger"><span>55</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (14).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kitap-lık</h5>
+              <p class="card-text text-danger"><span>100</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    <div class=" card" style="width: 15rem;">
-        <img src="./img/images (5).jpg" class="card-img-top" alt="..." height="330px">
-        <div class="card-body">
-          <h5 class="card-title">Deliliğin Tarihi</h5>
-          <p class="card-text text-danger"><span>200</span></p>
-          <div class="d-flex icons">
-            <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-            <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-            <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                              YENİ ÇIKANLAR                              -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="container bg-body-secondary p-5 mb-5" id="yeniCikanlar">
+        <h2>YENİ ÇIKANLAR</h2>
+        <div class="d-flex cards">
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (21).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Özgürlük</h5>
+              <p class="card-text text-danger"><span>159</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (20).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bireyselleşmiş Toplum</h5>
+              <p class="card-text text-danger"><span>145</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (19).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Modernlik ve Müphemlik</h5>
+              <p class="card-text text-danger"><span>198</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (18).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sosyolojik Düşünmek</h5>
+              <p class="card-text text-danger"><span>105</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              src="./img/download (16).jpg"
+              class="card-img-top"
+              alt="..."
+              height="330px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">İnsan Bilgisi</h5>
+              <p class="card-text text-danger"><span>140</span></p>
+              <div class="d-flex icons">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping text-danger fa-2x"
+                    id="shopping"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-heart text-danger fa-2x"></i
+                ></a>
+                <a href=""
+                  ><i class="fa-solid fa-tag text-danger fa-2xl"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    <div class=" card" style="width: 15rem;">
-        <img src="./img/download (11).jpg" class="card-img-top" alt="..." height="330px">
-        <div class="card-body">
-          <h5 class="card-title">21. Yüzyılın Ezber Bozan Düşünürü</h5>
-          <p class="card-text text-danger"><span>150</span></p>
-          <div class="d-flex icons">
-            <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-            <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-            <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-</div>
-<!-- ----------------------------------------------------------------------- -->
-<!--                                  DERGİ                                  -->
-<!-- ----------------------------------------------------------------------- -->
-<div class="container bg-body-secondary p-5 mb-5" id="dergi">
-  <h2>DERGİ</h2>
-  <div class="d-flex cards">
-  <div class="card" style="width: 15rem;">
-      <img src="./img/download (13).jpg" class="card-img-top" alt="..." height="330px">
-      <div class="card-body">
-        <h5 class="card-title">Bilim ve Teknik</h5>
-        <p class="card-text text-danger"><span>90</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div>
-      </div>
-    </div>
-  <div class="card" style="width: 15rem;">
-      <img src="./img/images (6).jpg" class="card-img-top" alt="..." height="330px">
-      <div class="card-body">
-        <h5 class="card-title">OT</h5>
-        <p class="card-text text-danger"><span>75</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div>
-      </div>
-    </div>
-  <div class="card" style="width: 15rem;">
-      <img src="./img/download (12).jpg" class="card-img-top" alt="..." height="330px">
-      <div class="card-body">
-        <h5 class="card-title">HECE</h5>
-        <p class="card-text text-danger"><span>85</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x" ></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div> 
-      </div>
-    </div>
-  <div class="card" style="width: 15rem;">
-      <img src="./img/roman-kahramanlari-sayi-46-nisan-haziran-202179beb6c67e686877a6b47f35a84b880b.jpg" class="card-img-top" alt="..." height="330px">
-      <div class="card-body">
-        <h5 class="card-title">Roman Kahramanları</h5>
-        <p class="card-text text-danger"><span>55</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div>
-      </div>
-    </div>
-  <div class="card" style="width: 15rem;">
-      <img src="./img/download (14).jpg" class="card-img-top" alt="..." height="330px">
-      <div class="card-body">
-        <h5 class="card-title">Kitap-lık</h5>
-        <p class="card-text text-danger"><span>100</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ----------------------------------------------------------------------- -->
-<!--                              YENİ ÇIKANLAR                              -->
-<!-- ----------------------------------------------------------------------- -->
-<div class="container bg-body-secondary p-5 mb-5" id="yeniCikanlar">
-  <h2>YENİ ÇIKANLAR</h2>
-  <div class="d-flex cards">
-  <div class="card" style="width: 15rem;">
-      <img src="./img/download (21).jpg" class="card-img-top" alt="..."height="330px">
-      <div class="card-body">
-        <h5 class="card-title">Özgürlük</h5>
-        <p class="card-text text-danger"><span>159</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div>
-        
-      </div>
-    </div>
-  <div class="card" style="width: 15rem;">
-      <img src="./img/download (20).jpg" class="card-img-top" alt="..."height="330px">
-      <div class="card-body">
-        <h5 class="card-title">Bireyselleşmiş Toplum</h5>
-        <p class="card-text text-danger"><span>145</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div>
-        
-      </div>
-    </div>
-  <div class="card" style="width: 15rem;">
-      <img src="./img/download (19).jpg" class="card-img-top" alt="..."height="330px">
-      <div class="card-body">
-        <h5 class="card-title">Modernlik ve Müphemlik</h5>
-        <p class="card-text text-danger"><span>198</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x" ></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div>
-        
-      </div>
-    </div>
-  <div class="card" style="width: 15rem;">
-      <img src="./img/download (18).jpg" class="card-img-top" alt="..."height="330px">
-      <div class="card-body">
-        <h5 class="card-title">Sosyolojik Düşünmek</h5>
-        <p class="card-text text-danger"><span>105</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div>
-      </div>
-    </div>
-  <div class="card" style="width: 15rem;">
-      <img src="./img/download (16).jpg" class="card-img-top" alt="..."height="330px">
-      <div class="card-body">
-        <h5 class="card-title">İnsan Bilgisi</h5>
-        <p class="card-text text-danger"><span>140</span></p>
-        <div class="d-flex icons">
-          <a href=""><i class="fa-solid fa-cart-shopping text-danger fa-2x" id="shopping"></i></a>
-          <a href=""><i class="fa-solid fa-heart text-danger fa-2x"></i></a>
-          <a href=""><i class="fa-solid fa-tag text-danger fa-2xl"></i></a>
-        </div>      
-      </div>
-    </div>
-  </div>
-</div>
-</main>
-<footer class="container-fluid bg-body-tertiary p-3 text-center">
-  <article class="p-4">
-    &Happy reading!...
-    <script>
-      document.write(new Date().getFullYear())
-    </script>
-  </article>
-</footer>
-<script src="./bootstrapt/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </main>
+    <footer class="container-fluid bg-body-tertiary p-3 text-center">
+      <article class="p-4">
+        &Happy reading!...
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </article>
+    </footer>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

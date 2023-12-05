@@ -10,7 +10,7 @@ existingProducts.forEach((product,index) => {
   productDiv.classList.add("product", "p-2", "d-flex", "justify-content-around", "border-bottom", "border-0", "border-secondary-subtle", "mb-2");
   productDiv.innerHTML = `
     <div class="d-flex align-items-center"style="width: 500px" >
-      <img src="${product.imageSrc}" alt="" width="100px" class="me-3 image" />
+      <img src=".${product.imageSrc}" alt="" width="100px" class="me-3 image" />
       <p class="booksName h3">${product.productName}</p>
     </div>
     <div class="d-flex justify-content-between align-items-center" style="width: 200px" >
